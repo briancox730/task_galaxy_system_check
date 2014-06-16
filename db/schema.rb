@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(version: 20140616010442) do
   end
 
   create_table "user_task_lists", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "task_list_id"
+    t.integer  "user_id",      null: false
+    t.integer  "task_list_id", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
